@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AxieMateX - Automação Completa para Axie Infinity</title>
+    <title>AxieManager - Automação Completa para Axie Infinity</title>
     <link rel="icon" type="image/x-icon" href="Automate-logo.ico">
     <style>
         :root {
@@ -298,7 +298,7 @@
             background: rgba(255, 255, 255, 0.15);
             color: var(--text-primary);
             padding: 1rem 2.5rem;
-            border-radius: 50px;
+            border-radius: 55px;
             font-size: 1rem;
             font-weight: 600;
             margin-bottom: 2.5rem;
@@ -335,7 +335,7 @@
             margin-bottom: 2rem;
             text-shadow: 0 15px 40px rgba(0,0,0,0.6);
             font-weight: 900;
-            line-height: 1.1;
+            line-height: 1.4;
             position: relative;
         }
 
@@ -412,9 +412,10 @@
         }
 
         .cta-button.primary:hover {
-            transform: translateY(-8px) scale(1.05);
-            box-shadow: 0 30px 70px rgba(0, 0, 0, 0.6);
-            border-color: rgba(255, 255, 255, 0.4);
+            background: linear-gradient(45deg, #1a1a1a, #333);
+            color: var(--text-primary);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+            border: 2px solid rgba(255, 255, 255, 0.2);
         }
 
         .cta-button.secondary {
@@ -423,11 +424,26 @@
             border: 2px solid rgba(255, 255, 255, 0.3);
             backdrop-filter: blur(15px);
         }
+          .cta-button.secondary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+        .cta-button.secondary:hover::before {
+            left: 100%;
+        }
+        
 
         .cta-button.secondary:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateY(-8px);
-            box-shadow: 0 20px 50px rgba(255, 255, 255, 0.2);
+            background: linear-gradient(45deg, #1a1a1a, #333);
+            color: var(--text-primary);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+            border: 2px solid rgba(255, 255, 255, 0.2);
         }
 
         /* Scroll Indicators */
@@ -1217,7 +1233,7 @@
     <!-- Loading Screen -->
     <div class="loading-screen" id="loadingScreen">
         <div class="loading-spinner"></div>
-        <div class="loading-text">Carregando AxieMateX...</div>
+        <div class="loading-text">Carregando AxieManager...</div>
     </div>
 
     <!-- Floating Particles -->
@@ -1230,7 +1246,7 @@
                 <span class="logo-icon">
                     <img src="Automate-logo.ico" alt="logo-icon">
                 </span>
-                <span>AxieMateX</span>
+                <span>Axie Manager</span>
             </div>
             <ul class="nav-links">
                 <li><a href="#inicio">Início</a></li>
@@ -1249,7 +1265,7 @@
             <div class="hero-content">
                 <div class="hero-badge scroll-reveal">🚀 Automação Premium para Axie Infinity</div>
                 <h1 class="gradient-text scroll-reveal">
-                    AxieMateX
+                    Axie Manager
                 </h1>
                 <p class="scroll-reveal">
                     A solução mais avançada para automatizar completamente seu gameplay no Axie Infinity. 
@@ -1269,7 +1285,7 @@
         <div class="container">
             <h2 class="section-title scroll-reveal">Recursos Avançados</h2>
             <p class="section-subtitle scroll-reveal">
-                Descubra as funcionalidades que tornam o AxieMateX a escolha número 1 dos jogadores profissionais
+                Descubra as funcionalidades que tornam o AxieManager a escolha número 1 dos jogadores profissionais
             </p>
             <div class="features-grid">
                 <div class="feature-card scroll-reveal-left">
@@ -1372,7 +1388,7 @@
                             <div class="contact-method-icon">💬</div>
                             <div>
                                 <strong>Discord</strong><br>
-                                Comunidade oficial AxieMateX
+                                Comunidade oficial AxieManager
                             </div>
                         </a>
                         <a href="https://t.me/axiematex" class="contact-method">
@@ -1421,7 +1437,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>AxieMateX</h3>
+                    <h3>AxieManager</h3>
                     <p>A solução definitiva para automação profissional no Axie Infinity. Maximize seus ganhos com nossa tecnologia avançada.</p>
                     <div class="social-links">
                         <a href="#">📘</a>
@@ -1459,7 +1475,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 AxieMateX. Todos os direitos reservados. | Desenvolvido com ❤️ para a comunidade Axie</p>
+                <p>&copy; 2024 AxieManager. Todos os direitos reservados. | Desenvolvido com ❤️ para a comunidade Axie</p>
             </div>
         </div>
     </footer>
@@ -1562,7 +1578,7 @@
         // Prepare Discord message
         const discordPayload = {
             embeds: [{
-                title: "📬 Nova Mensagem - AxieMateX",
+                title: "📬 Nova Mensagem - AxieManager",
                 color: 0x00ff00, // Verde
                 fields: [
                     {
@@ -1589,7 +1605,7 @@
                 ],
                 timestamp: new Date().toISOString(),
                 footer: {
-                    text: "AxieMateX Contact Form"
+                    text: "AxieManager Contact Form"
                 }
             }]
         };
